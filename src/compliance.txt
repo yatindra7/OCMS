@@ -1,0 +1,56 @@
+Operations to perform:
+  Synchronize unmigrated apps: crispy_forms, messages, staticfiles, widget_tweaks
+  Apply all migrations: admin, auth, base, classroom, comments, contactus, contenttypes, courses, newsletter, openforms, posts, sessions, users
+Synchronizing apps without migrations:
+  Creating tables...
+    Running deferred SQL...
+Running migrations:
+  Applying contenttypes.0001_initial... OK
+  Applying auth.0001_initial... OK
+  Applying admin.0001_initial... OK
+  Applying admin.0002_logentry_remove_auto_add... OK
+  Applying admin.0003_logentry_add_action_flag_choices... OK
+  Applying contenttypes.0002_remove_content_type_name... OK
+  Applying auth.0002_alter_permission_name_max_length... OK
+  Applying auth.0003_alter_user_email_max_length... OK
+  Applying auth.0004_alter_user_username_opts... OK
+  Applying auth.0005_alter_user_last_login_null... OK
+  Applying auth.0006_require_contenttypes_0002... OK
+  Applying auth.0007_alter_validators_add_error_messages... OK
+  Applying auth.0008_alter_user_username_max_length... OK
+  Applying auth.0009_alter_user_last_name_max_length... OK
+  Applying auth.0010_alter_group_name_max_length... OK
+  Applying auth.0011_update_proxy_permissions... OK
+  Applying auth.0012_alter_user_first_name_max_length... OK
+  Applying base.0001_initial... OK
+  Applying classroom.0001_initial... OK
+  Applying classroom.0002_auto_20201118_1003... OK
+  Applying classroom.0003_classroom_time_slot... OK
+  Applying classroom.0004_auto_20220328_1648... OK
+  Applying classroom.0005_auto_20220328_1702... OK
+  Applying classroom.0006_auto_20220328_1706... OK
+  Applying classroom.0007_auto_20220328_1716... OK
+  Applying classroom.0008_auto_20220328_1719... OK
+  Applying posts.0001_initial... OK
+  Applying posts.0002_assignmentfile_submittedassignment... OK
+  Applying posts.0003_auto_20201119_1923... OK
+  Applying posts.0004_assignment_due_date... OK
+  Applying comments.0001_initial... OK
+  Applying comments.0002_auto_20201126_1549... OK
+  Applying comments.0003_comment_created_at... OK
+  Applying comments.0004_privatecomment... OK
+  Applying contactus.0001_initial... OK
+  Applying courses.0001_initial... OK
+  Applying courses.0002_auto_20201127_1653... OK
+  Applying courses.0003_auto_20201127_1719... OK
+  Applying courses.0004_course_created_by... OK
+  Applying courses.0005_auto_20201128_0451... OK
+  Applying courses.0006_auto_20201128_1044... OK
+  Applying newsletter.0001_initial... OK
+  Applying newsletter.0002_auto_20201129_0933... OK
+  Applying openforms.0001_initial... OK
+  Applying posts.0005_auto_20201127_2129... OK
+  Applying sessions.0001_initial... OK
+  Applying users.0001_initial... OK
+  Applying users.0002_auto_20201118_1003... OK
+System check identified no issues (0 silenced).

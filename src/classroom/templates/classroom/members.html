@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load widget_tweaks %}
+{% load crispy_forms_tags %}
+{% block title %} Home {% endblock title %}
+
+
+{% block content %}
+<div class="col-lg-8 mx-auto">
+    <!-- Teachers -->
+    <h3 class="text-primary font-weight-bold">Teachers</h3>
+    <hr>
+
+    {% for teacher in teachers %}
+      <div class="row">
+        <img width="25px" height="25px" class="img-profile rounded-circle" src="{{ teacher.teacher.profile.image.url }}">
+        <p class="text-dark"><a href ="#">{{ teacher.teacher.username }}</a></p>
+        <button class="ml-auto btn btn-secondary"><a href = "mailto: {{ teacher.teacher.email }}" style = "color:white;">mail</a></button>
+      </div>
+      <hr>
+    {% endfor %}
+
+
+
+
+    <!-- Students -->
+    <div class="row mt-4">
+      <div class="col-lg-8">
+        <h3 class="text-primary font-weight-bold">Students</h3>
+      </div>
+      <div class="col-lg-4 ">
+        <p class="text-primary ml-auto float-right">{{ students|length }}</p>
+      </div>
+    </div>
+    <hr>
+
+    {% for student in students %}
+      <div class="row">
+        <img width="25px" height="25px" class="img-profile rounded-circle" src="{{ student.profile.image.url }}">
+        <p class="text-dark"><a href ="#">{{ user.username }}</a></p>
+        <button class="ml-auto btn btn-secondary" ><a href = "mailto: {{ student.email }}" style = "color:white;">mail</a></button>
+      </div>
+      <hr>
+    {% endfor %}
+
+{% endblock content %}

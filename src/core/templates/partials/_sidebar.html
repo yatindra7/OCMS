@@ -1,0 +1,131 @@
+<!-- Sidebar -->
+<ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+
+    <!-- Sidebar - Brand -->
+    <a class="sidebar-brand d-flex align-items-center justify-content-center" href="{% url 'classroom:home' %}">
+      <div class="sidebar-brand-icon rotate-n-15">
+        <i class="fas fa-book-open"></i>
+      </div>
+      <div class="sidebar-brand-text mx-3"> OCMS </div>
+    </a>
+
+    <!-- Divider -->
+    <hr class="sidebar-divider my-0">
+
+    <!-- Nav Item - Dashboard -->
+    <li class="nav-item">
+      <a class="nav-link" href="{% url 'classroom:home' %}">
+        <i class="fas fa-fw fa-tachometer-alt"></i>
+        <span>Classrooms</span></a>
+    </li>
+
+    <!-- Divider -->
+    <hr class="sidebar-divider">
+
+    <!-- Heading -->
+    <div class="sidebar-heading">
+      Options
+    </div>
+
+    <!-- Nav Item - Pages Collapse Menu -->
+    <li class="nav-item">
+      <a class="nav-link collapsed" href="{% url 'classroom:home' %}">
+        <i class="fas fa-fw fa-cog"></i>
+        <span>Classrooms</span>
+      </a>
+    </li>
+
+    <!-- Nav Item - Utilities Collapse Menu -->
+    <li class="nav-item">
+      <a class="nav-link" href="{% url 'classroom:todo' %}" >
+        <i class="fas fa-fw fa-wrench"></i>
+        <span>To Do</span>
+      </a>
+    </li>
+
+    <li class="nav-item">
+      <a class="nav-link" href="{% url 'classroom:toreview' %}" >
+        <i class="fas fa-fw fa-wrench"></i>
+        <span>To Review</span>
+      </a>
+    </li>
+
+    <li class="nav-item">
+      <a class="nav-link" href="{% url 'classroom:assignment_create' %}">
+        <i class="fas fa-fw fa-chart-area"></i>
+        <span>Create Assignment</span></a>
+    </li>
+
+    <!-- Divider -->
+    <hr class="sidebar-divider">
+
+    <!-- Heading -->
+    <div class="sidebar-heading">
+      Features
+    </div>
+
+    <!-- Nav Item - Pages Collapse Menu -->
+    {% if 'open' in request.path %}
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'classroom:classwork' classroom.pk %}" >
+          <i class="fas fa-fw fa-folder"></i>
+          <span>Classworks</span>
+        </a>
+      </li>
+    {% endif %}
+
+    <li class="nav-item">
+      <a class="nav-link" href="{% url 'classroom:timetable' %}">
+        <i class="fas fa-fw fa-table"></i>
+        <span>Timetable</span></a>
+    </li>
+
+    <!-- Nav Item - Charts -->
+    
+
+
+
+    <!-- Nav Item - Tables -->
+    <li class="nav-item">
+      <a class="nav-link" href="{% url 'whiteboard:whiteboard' %}">
+        <i class="fas fa-fw fa-table"></i>
+        <span>Whiteboard</span></a>
+    </li>
+    <!-- Nav Item - Tables -->
+    <li class="nav-item">
+      <a class="nav-link" href="{% url 'whiteboard:live' %}">
+        <i class="fas fa-fw fa-table"></i>
+        <span>Liveboard</span></a>
+    </li>
+
+    <!-- Nav Item - Tables -->
+    <li class="nav-item">
+      <a class="nav-link" href="{% url 'courses:course_list' %}">
+        <i class="fas fa-fw fa-table"></i>
+        <span>Courses</span></a>
+    </li>
+
+    <!-- Nav Item - Tables -->
+    <li class="nav-item">
+      <a class="nav-link" href="{% url 'ide:ide' %}">
+        <i class="fas fa-fw fa-table"></i>
+        <span>IDE</span></a>
+    </li>
+
+     <!-- Nav Item - Tables -->
+     <!-- <li class="nav-item">
+      <a class="nav-link" href="{% url 'ide:problems' %}">
+        <i class="fas fa-fw fa-table"></i>
+        <span>Problem Statements</span></a>
+    </li> -->
+
+    <!-- Divider -->
+    <hr class="sidebar-divider d-none d-md-block">
+
+    <!-- Sidebar Toggler (Sidebar) -->
+    <div class="text-center d-none d-md-inline">
+      <button class="rounded-circle border-0" id="sidebarToggle"></button>
+    </div>
+
+  </ul>
+  <!-- End of Sidebar -->
